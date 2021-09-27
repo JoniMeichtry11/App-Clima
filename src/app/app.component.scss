@@ -1,0 +1,27 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.3);
+  background-blend-mode: soft-light;
+  transition: all 0.8s;
+
+  .weather-app {
+    padding: 36px;
+    width: 360px;
+    height: 640px;
+    background-color: #E9B329;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.8s;
+    app-details{
+        height: 100%;
+    }
+  }
+}

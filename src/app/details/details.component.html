@@ -1,0 +1,31 @@
+<div class="details">
+  <p class="minmax">{{weatherInfo.main.temp_min}}°C min / {{weatherInfo.main.temp_max}}°C max</p>
+  <div class="wind detail">
+    <div class="icon">
+      <p class="info">Velocidad del viento</p>
+      <i class='bx bx-wind'></i>
+    </div>
+    <p class="wind-detail">{{weatherInfo.wind.speed}}m/s</p>
+  </div>
+  <div class="clouds detail">
+    <div class="icon">
+      <p class="info">Porcentaje de nubes</p>
+      <i class='bx bxs-cloud'></i>
+    </div>
+    <p class="clouds-detail">{{weatherInfo.clouds.all}}%</p>
+  </div>
+  <div class="humidity detail">
+    <div class="icon">
+      <p class="info">Porcentaje de humedad</p>
+      <i class='bx bx-water'></i>
+    </div>
+    <p class="humidity-detail">{{weatherInfo.main.humidity}}%</p>
+  </div>
+  <div class="pressure detail">
+    <div class="icon">
+      <p class="info">Presion en hectopascales</p>
+      <i class='bx bx-tachometer'></i>
+    </div>
+    <p class="pressure-detail">{{weatherInfo.main.pressure}}hPa</p>
+  </div>
+</div>

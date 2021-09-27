@@ -1,0 +1,7 @@
+<main [style.background-image]="backImage">
+  <section [style.backgroundColor]="appBackColor" class="weather-app">
+    <app-searchbox (searchValue)="getWeatherInfo($event)"></app-searchbox>
+    <app-main-info [style.color]="fontColor" [weatherInfo]="weatherInfo"></app-main-info>
+    <app-details [weatherInfo]="weatherInfo"></app-details>
+  </section>
+</main>

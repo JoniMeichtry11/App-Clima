@@ -1,0 +1,7 @@
+<form>
+    <div [formGroup]="searchForm" class="searchBox">
+      <i (click)="getSearch()" class='bx bx-search'></i>
+      <input name="search" formControlName="search" type="text" placeholder="City" (keydown.enter)="onEnter($event)">
+      <span *ngIf="f.search.errors?.pattern && f.search.touched" class="error">Formato incorrecto</span>
+    </div>
+  </form>

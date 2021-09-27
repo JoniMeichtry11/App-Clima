@@ -1,0 +1,45 @@
+form {
+  align-self: center;
+  width: 100%;
+
+  .searchBox {
+    position: relative;
+
+    .bx-search {
+      position: relative;
+      left: 26px;
+      top: 4px;
+      z-index: 999;
+      color: #f2f2f2;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .error {
+      position: absolute;
+      width: max-content;
+      left: 50px;
+      bottom: -20px;
+      padding: 0 5px;
+      border-radius: 10px;
+      color: #f2f2f2;
+      font-size: 0.8em;
+      background-color: rgb(224, 88, 88, 0.5);
+    }
+
+    input {
+      width: 90%;
+      height: 35px;
+      padding-left: 30px;
+      border-radius: 12px;
+      background-color: rgb(240, 240, 240, 0.26);
+      color: #000000;
+      font-size: 1.1em;
+
+      &::placeholder {
+        color: #f2f2f2;
+        font-size: 16px;
+      }
+    }
+  }
+}
